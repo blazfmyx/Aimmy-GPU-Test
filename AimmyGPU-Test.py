@@ -43,20 +43,12 @@ if gpu_info:
         print_slow(Fore.RED + "Aimmy will not work for you.")
     elif "NVIDIA" in gpu_info and ("MX" in gpu_info):
         print_slow(Fore.YELLOW + "Aimmy will most likely not work for you or will be bad")
-    if "AMD" in gpu_info and ("XT" in gpu_info):
+    if "AMD" in gpu_info or "Radeon" in gpu_info and ("XT" in gpu_info):
         print_slow(Fore.LIGHTGREEN_EX + "Aimmy should work well for you!")
     elif "AMD" in gpu_info and ("VEGA" in gpu_info):
         print_slow(Fore.LIGHTRED_EX + "Aimmy will most likely not work for you")
-    elif "AMD" in gpu_info and ("Radeon" in gpu_info):
-        print_slow(Fore.LIGHTRED_EX + "Aimmy will most likely not work for you")
-    elif "AMD" in gpu_info and ("RX" in gpu_info):
+    elif "AMD" in gpu_info or "Radeon" in gpu_info and ("RX" in gpu_info):
         print_slow(Fore.LIGHTGREEN_EX + "If it's above a 560 you should be good.")
-    if "Radeon" in gpu_info and ("XT"):
-        print_slow(Fore.LIGHTGREEN_EX + "Aimmy should work perfectly fine for you")
-    elif "Radeon" in gpu_info and ("1300"):
-        print_slow(Fore.RED + "Aimmy should work perfectly fine for you")
-    elif "Radeon" in gpu_info and ("RX"):
-        print_slow(Fore.YELLOW + "May or may not work")
     if "Intel" in gpu_info and ("UHD" in gpu_info):
         print_slow(Fore.RED + "Aimmy will not work for you.")
     elif "Intel" in gpu_info and ("HD" in gpu_info):
@@ -67,6 +59,6 @@ if gpu_info:
         print_slow(Fore.RED + "Aimmy will not work for you")
 
 # Trolling and Additional Information
-print_slow(Fore.CYAN + "\n\nIf you have more than one GPU, make sure to specify that Aimmy uses your dedicated one."), time.sleep(120)
+print_slow(Fore.CYAN + "\n\nIf you have more than one GPU, make sure to specify that Aimmy uses your dedicated one.\nAlso if you got a blank message with no information please dm blazfmy on Discord."), time.sleep(120)
 print_slow("\nWhy are you still here??"), time.sleep(2000)
 print_slow("\nDawg close the damn terminal!"), time.sleep(300)
